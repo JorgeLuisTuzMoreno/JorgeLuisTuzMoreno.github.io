@@ -1,2 +1,2 @@
 # JorgeLuisTuzMoreno
-Repositorio publico
+Repositorio de clase

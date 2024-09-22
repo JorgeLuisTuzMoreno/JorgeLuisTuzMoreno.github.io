@@ -1,0 +1,46 @@
+/* Contenedor general para la sección de habilidades */
+.skills-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Título de la sección */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black; /* Color del título en negro */
+  }
+  
+  /* Grid para las habilidades */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px; /* Ajusta el ancho máximo para que coincida con las otras secciones */
+    margin: 0 auto;
+  }
+  
+  /* Elementos individuales (burbujas) */
+  .skill-item {
+    background-color: #4A90E2; /* Color azul para las burbujas */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px; /* Hace que las burbujas sean más redondeadas */
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más suave y definida */
+    cursor: default;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  /* Efecto hover en las burbujas */
+  .skill-item:hover {
+    transform: scale(1.05);
+    background-color: #50C9C3; /* Cambia el color en hover para darle dinamismo */
+  }
+  

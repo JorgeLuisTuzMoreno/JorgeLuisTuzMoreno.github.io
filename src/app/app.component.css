@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+td:first-child {
+    width: 50%; /* Columna izquierda */
+}
+
+td:last-child {
+    width: 50%; /* Columna derecha */
+}

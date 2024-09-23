@@ -1,0 +1,49 @@
+/* languages.component.css */
+
+.languages-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #e0f7fa; /* Azul claro */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 26px;
+    color: #00695c; /* Verde oscuro */
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .language-item {
+    padding: 20px;
+    background: linear-gradient(135deg, #4db6ac, #81d4fa); /* Gradiente azul-verde */
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .language-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  span {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  

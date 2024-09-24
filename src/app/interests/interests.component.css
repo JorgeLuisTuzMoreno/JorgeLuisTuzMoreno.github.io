@@ -1,0 +1,64 @@
+/* Estilo general del contenedor */
+.interests-container {
+    background: linear-gradient(135deg, #4A90E2, #50C9C3); /* Gradiente azul y verde */
+    padding: 15px; /* Reducido el padding */
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 20px auto;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de la sección */
+h3 {
+    text-align: center;
+    font-size: 1.8rem; /* Tamaño de fuente reducido */
+    letter-spacing: 1px;
+    margin-bottom: 15px; /* Margen inferior reducido */
+    color: black; /* Color negro para el título */
+}
+
+/* Estilo de la lista de intereses */
+.interests-list {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+/* Elemento de la lista */
+.interest-item {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border-radius: 8px;
+    padding: 10px; /* Padding reducido */
+    margin-bottom: 10px; /* Margen inferior reducido */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Efecto hover en los elementos de la lista */
+.interest-item:hover {
+    transform: translateY(-2px); /* Elevar al pasar el ratón */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
+}
+
+/* Información de los intereses */
+.interest-item {
+    font-size: 1rem; /* Tamaño de fuente reducido */
+    color: white; /* Color blanco para el texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .interests-container {
+        padding: 10px; /* Padding reducido */
+    }
+
+    h3 {
+        font-size: 1.6rem; /* Tamaño de fuente reducido en móviles */
+    }
+
+    .interest-item {
+        padding: 8px; /* Padding reducido */
+        font-size: 0.9rem; /* Tamaño de fuente reducido en móviles */
+    }
+}

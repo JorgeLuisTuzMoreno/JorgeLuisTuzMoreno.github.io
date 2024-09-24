@@ -6,19 +6,19 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.css'
+  styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  skills: string[] = [
-    'Desarrollo Ágil',
-    'Patrones de diseño',
-    'Manejo de bases de datos',
-    'Diseño de arquitecturas escalables',
-    'Seguridad informática',
-    'Control de versiones',
-    'Adaptación a nuevas tecnologías',
-    'Refactorización de código',
-    'Control de calidad del software',
-    'Análisis de requerimientos'
+  skills: { name: string, level: number }[] = [
+    { name: 'Desarrollo Ágil', level: 90 },
+    { name: 'Patrones de diseño', level: 80 },
+    { name: 'Manejo de bases de datos', level: 75 },
+    { name: 'Diseño de arquitecturas escalables', level: 85 },
+    { name: 'Seguridad informática', level: 70 },
+    { name: 'Control de versiones', level: 95 },
+    { name: 'Adaptación a nuevas tecnologías', level: 85 },
+    { name: 'Refactorización de código', level: 80 },
+    { name: 'Control de calidad del software', level: 90 },
+    { name: 'Análisis de requerimientos', level: 75 }
   ];
 }

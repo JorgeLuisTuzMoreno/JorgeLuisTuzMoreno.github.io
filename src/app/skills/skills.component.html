@@ -1,8 +1,9 @@
 <div class="skills-container">
-    <h2>Skills & Competencies</h2>
-    <div class="skills-grid">
-      <div *ngFor="let skill of skills" class="skill-item">
-        {{ skill }}
-      </div>
+    <h3>Skills & Competences</h3>
+    <div *ngFor="let skill of skills" class="skill">
+        <span>{{ skill.name }}</span>
+        <div class="bar">
+            <div class="progress" [style.width]="skill.level + '%'"></div>
+        </div>
     </div>
-  </div>
+</div>

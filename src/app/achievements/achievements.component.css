@@ -1,0 +1,77 @@
+/* Contenedor general */
+.achievements-container {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de la sección */
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #01579b; /* Azul oscuro */
+}
+
+/* Estilo para cada logro */
+.achievement-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de cada logro */
+.achievement-title {
+    font-size: 1.2rem;
+    color: #0277bd;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+/* Año del logro */
+.achievement-year {
+    font-size: 1rem;
+    color: #01579b;
+    font-weight: 400;
+}
+
+/* Descripción del logro */
+.achievement-description {
+    font-size: 1rem;
+    color: #004d6b;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .achievements-container {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .achievement-title {
+        font-size: 1.1rem;
+    }
+
+    .achievement-description {
+        font-size: 0.9rem;
+    }
+}

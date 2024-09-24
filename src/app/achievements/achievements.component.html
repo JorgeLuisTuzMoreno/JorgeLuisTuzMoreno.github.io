@@ -1,0 +1,10 @@
+<div class="achievements-container">
+    <h3>Achievements & Certificates</h3>
+    <div *ngFor="let achievement of achievements" class="achievement-item">
+      <h4 class="achievement-title">
+        {{ achievement.title }}
+        <span class="achievement-year">{{ achievement.year ? '(' + achievement.year + ')' : '' }}</span>
+      </h4>
+      <p class="achievement-description">{{ achievement.description }}</p>
+    </div>
+  </div>

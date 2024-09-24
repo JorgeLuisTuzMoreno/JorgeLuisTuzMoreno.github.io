@@ -1,17 +1,120 @@
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8f1f5; /* Fondo suave */
+    color: #333;
+}
+
+/* Estilo de la tabla principal */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 1200px; /* Limitar el ancho máximo */
+    background-color: white; /* Fondo blanco para la tabla */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden;
 }
 
+/* Estilo de las celdas de la tabla */
 td {
     vertical-align: top;
     padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
+/* Estilo para la cabecera (header) */
+td[colspan="2"] {
+    padding: 0;
+    background-color: #50C9C3; /* Color de fondo suave para el header */
+    color: white;
+    text-align: center;
+}
+
+/* Primera columna */
 td:first-child {
     width: 50%; /* Columna izquierda */
+    padding: 20px 30px;
+    background-color: #f0f9fc; /* Fondo ligeramente distinto para separar columnas */
 }
 
+/* Segunda columna */
 td:last-child {
     width: 50%; /* Columna derecha */
+    padding: 20px 30px;
+    background-color: #eef6fa; /* Fondo ligeramente distinto para separar columnas */
+}
+
+/* Encabezados de las secciones (h3 dentro de los componentes) */
+h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #50C9C3; /* Subrayado de color suave */
+    padding-bottom: 5px;
+}
+
+/* Tarjetas generales */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en las tarjetas */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces dentro de las secciones (si los hay) */
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listas dentro de las secciones */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    td {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    table {
+        box-shadow: none;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
 }
